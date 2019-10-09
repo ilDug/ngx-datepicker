@@ -1,0 +1,13 @@
+<mat-form-field>
+    <input matInput  [matDatepicker]="dag"
+    [placeholder]="placeholder"
+    [(ngModel)]="materialDate"
+    (dateChange) ="change($event)"
+    (focus)="handleTyping($event)"
+    [disabled]="disabled"
+    >
+    <!-- [value] = "materialDate" non funziona -->
+
+    <mat-datepicker-toggle matSuffix [for]="dag"></mat-datepicker-toggle>
+    <mat-datepicker #dag [disabled]="disabled"></mat-datepicker>
+</mat-form-field>
