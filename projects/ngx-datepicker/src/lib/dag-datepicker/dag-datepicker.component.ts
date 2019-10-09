@@ -1,5 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
-import * as moment from 'moment';
+
+import { Moment } from 'moment';
+import * as moment_ from 'moment';
+const moment = moment_;
 
 @Component({
     selector: 'dag-datepicker',
@@ -8,7 +11,7 @@ import * as moment from 'moment';
 })
 export class DagDatepickerComponent implements OnChanges {
     /** variabile che comunica con il component di Material */
-    public materialDate: moment.Moment;
+    public materialDate: Moment;
 
     /** variabile locale per il two-way binding */
     private dateVal: number;
