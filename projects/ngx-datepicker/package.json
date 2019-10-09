@@ -1,6 +1,6 @@
 {
     "name": "@ildug/ngx-datepicker",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "ilDug",
     "description": "date-picker based on Angular Material",
     "license": "MIT",

@@ -2,9 +2,9 @@ import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angu
 import * as moment from 'moment';
 
 @Component({
-    selector: 'dag-date-picker',
-    templateUrl: './dag-date-picker.component.html',
-    styleUrls: ['./dag-date-picker.component.scss']
+    selector: 'dag-datepicker',
+    templateUrl: './dag-datepicker.component.html',
+    styleUrls: ['./dag-datepicker.component.scss']
 })
 export class DagDatepickerComponent implements OnChanges {
     /** variabile che comunica con il component di Material */
@@ -12,20 +12,23 @@ export class DagDatepickerComponent implements OnChanges {
 
     /** variabile locale per il two-way binding */
     private dateVal: number;
+    
     // implementazione del two way bindings
-    @Output() dateChange = new EventEmitter<number>();
-    @Input() get date(): number { return this.dateVal };
-    set date(val) {
-        this.dateVal = val;
-        this.dateChange.emit(this.dateVal)
-    }
+    @Output()   dateChange = new EventEmitter<number>();
+    @Input()    get date(): number { return this.dateVal };
+                set date(val) {
+                    this.dateVal = val;
+                    this.dateChange.emit(this.dateVal)
+                }
 
 
     /** altre opzioni */
     @Input() disabled: boolean;
     @Input() placeholder: string;
 
-    constructor() { }
+    constructor() {
+        this.dateVal = null
+    }
 
 
 

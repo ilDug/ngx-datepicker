@@ -2,5 +2,26 @@
     <h1>ngx-datepicker</h1>
     <p>example:</p>
 
+    <p style="width:300px;">
+        <dag-datepicker 
+            [(date)]="date" 
+            [placeholder]="placeholder"
+            [disabled]="isDisabled"
+            (dateChange)="onChange($event)"
+            ></dag-datepicker>
+    </p>
+
+
     
+</div>
+
+<div>
+    <p>
+        <input type="text" [(ngModel)]="placeholder">
+    </p>
+    <p>
+       disabled: <input type="checkbox" [(ngModel)]="isDisabled">
+    </p>
+    <p>{{date}}</p>
+
 </div>
