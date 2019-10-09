@@ -1,0 +1,15 @@
+{
+    "name": "@ildug/ngx-datepicker",
+    "version": "0.0.1",
+    "author": "ilDug",
+    "description": "date-picker based on Angular Material",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ilDug/ngx-datepicker"
+    },
+    "peerDependencies": {
+        "@angular/common": "^8.2.9",
+        "@angular/core": "^8.2.9"
+    }
+}
