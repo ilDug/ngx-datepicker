@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 
 
 /**required by libraries */
-import { NgxDatepickerModule } from 'projects/ngx-datepicker/src/public-api';
+import { NgxDatepickerModule } from 'ngx-datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
