@@ -2,9 +2,12 @@ import { NgModule } from '@angular/core';
 import { DagDatepickerComponent } from './dag-datepicker/dag-datepicker.component';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MAT_MOMENT_DATE_FORMATS, MomentDateAdapter, MatMomentDateModule } from '@angular/material-moment-adapter';
-import { CommonModule } from '@angular/common';
-import { MatDatepickerModule, MatInputModule, MatFormFieldModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from "@angular/material/datepicker";
+// import { MatDatepickerModule, MatInputModule, MatFormFieldModule } from '@angular/material';
 
 // See the Moment.js docs for the meaning of these formats:
 // https://momentjs.com/docs/#/displaying/format/
