@@ -1,4 +1,4 @@
 # ngx-datepicker
 Custom date-picker based on Angular Material
 
-updated to Angular 10
+updated to Angular 12
